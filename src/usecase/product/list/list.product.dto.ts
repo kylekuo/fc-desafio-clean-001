@@ -1,4 +1,8 @@
-import Product from "../../../domain/product/entity/product";
+type Product = {
+  id: string;
+  name: string;
+  price: number;
+}
 
 export interface InputListProductDto {}
 

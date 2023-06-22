@@ -1,8 +1,9 @@
+import Product from "../../../domain/product/entity/product";
 import ProductFactory from "../../../domain/product/factory/product.factory";
 import { InputFindProductDto } from "./find.product.dto";
 import FindProductUseCase from "./find.product.usecase";
 
-const product = ProductFactory.create( 'a', 'Product', 10 );
+const product = new Product('123', 'Product', 10);
 
 const MockRepository = () => {
   return {

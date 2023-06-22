@@ -1,6 +1,7 @@
 import CreateProductUseCase from "./create.product.usecase";
+
 const input = {
-  id: "123",
+  type: "a",
   name: "Product name",
   price: 123
 };

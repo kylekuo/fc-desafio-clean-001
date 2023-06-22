@@ -12,7 +12,7 @@ export default class ListProductUseCase {
 
   async execute(input: InputListProductDto): Promise<OutputListProductDto> {
     const products = await this.repository.findAll();
-    return OutputMapper.toOutput(products as Product[]);
+    return OutputMapper.toOutput(products);
   }
 }
 
@@ -23,7 +23,7 @@ class OutputMapper {
         id: product.id,
         name: product.name,
         price: product.price
-      }) as Product),
+      })),
     };
   }
 }
